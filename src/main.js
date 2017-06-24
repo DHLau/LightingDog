@@ -5,10 +5,15 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import VueRouter from 'vue-router'
 import routerConfig from './router/index.js'
+import axios from 'axios'
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)
 Vue.use(VueRouter)
+Vue.use(VueResource)
+
+
 
 const router = new VueRouter(routerConfig);
 
